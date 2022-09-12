@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            font-family: monospace;
+            font-size: medium;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .flex-container{
+            background-color: yellowgreen;
+            height: 200px;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-items{
+            background-color: aqua;
+            text-align: center;
+            width: 100px;
+            margin: 10px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">BASIC FLEXBOX DESIGN</div>
+    <div class="flex-container">
+        <div class="flex-items" style="
+            align-self: flex-start;
+            flex-grow:1 ;
+            flex-shrink: 0;
+            flex-basis:100px ;
+            /* flex: 1 0 50px; */
+        ">ONE</div>
+        <div class="flex-items" style="
+            align-self: center;
+            flex-grow:1 ;
+            flex-shrink: 0;
+            flex-basis:100px ;
+            /* flex: 1 0 50px; */
+        ">TWO</div>
+        <div class="flex-items" style="
+            align-self: flex-end;
+            flex-grow:1 ;
+            flex-shrink: 0;
+            flex-basis:100px ;
+            /* flex: 1 0 50px; */
+        ">THREE</div>
+        <div class="flex-items" style="
+            align-self: center;
+            flex-grow:1 ;
+            flex-shrink: 0;
+            flex-basis:100px ;
+            /* flex: 1 0 50px; */
+        ">FOUR</div>
+        <div class="flex-items" style="
+            align-self: flex-start;
+            flex: grow 1; ;
+            flex-shrink: 0;
+            flex-basis:100px ;
+            /* flex: 5 0 50px; */
+        ">FIVE</div>
+    </div>
+</body>
+</html>
